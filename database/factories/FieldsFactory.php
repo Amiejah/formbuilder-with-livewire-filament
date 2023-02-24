@@ -18,7 +18,7 @@ class FieldsFactory extends Factory
     {
         // Write the factory for the Fields model
         return [
-            'name' => $this->faker->name,
+            'name' => $this->faker->name(),
             'type' => $this->faker->randomElement(['text', 'email', 'number', 'date', 'textarea', 'select', 'checkbox', 'radio']),
             'view' => '',
         ];

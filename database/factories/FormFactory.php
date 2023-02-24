@@ -18,9 +18,9 @@ class FormFactory extends Factory
     {
         // Write the factory for the Form model
         return [
-            'name' => $this->faker->name,
-            'description' => $this->faker->text,
-            'is_active' => $this->faker->boolean,
+            'name' => $this->faker->name(),
+            'description' => $this->faker->text(),
+            'is_active' => $this->faker->boolean(),
         ];
     }
 }
