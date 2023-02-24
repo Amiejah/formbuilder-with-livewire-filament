@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Question extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'form_id',
+        'field_id',
+        'label',
+        'is_required',
+        'is_active',
+    ];
 }
