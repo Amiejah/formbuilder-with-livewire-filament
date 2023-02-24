@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Fields>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Field>
  */
-class FieldsFactory extends Factory
+class FieldFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -16,7 +16,7 @@ class FieldsFactory extends Factory
      */
     public function definition(): array
     {
-        // Write the factory for the Fields model
+        // Write the factory for the Field model
         return [
             'name' => $this->faker->name(),
             'type' => $this->faker->randomElement(['text', 'email', 'number', 'date', 'textarea', 'select', 'checkbox', 'radio']),

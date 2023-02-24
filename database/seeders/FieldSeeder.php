@@ -2,17 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\Fields;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Field;
 use Illuminate\Database\Seeder;
 
-class FieldsSeeder extends Seeder
+class FieldSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Fields::factory()->count(8)->create();
+        Field::factory()->count(8)->create();
     }
 }

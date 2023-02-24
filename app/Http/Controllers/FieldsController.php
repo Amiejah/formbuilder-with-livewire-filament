@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreFieldsRequest;
-use App\Http\Requests\UpdateFieldsRequest;
-use App\Models\Fields;
+use App\Http\Requests\StoreFieldRequest;
+use App\Http\Requests\UpdateFieldRequest;
+use App\Models\Field;
 
-class FieldsController extends Controller
+class FieldController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class FieldsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreFieldsRequest $request)
+    public function store(StoreFieldRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class FieldsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Fields $fields)
+    public function show(Field $Field)
     {
         //
     }
@@ -43,7 +43,7 @@ class FieldsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Fields $fields)
+    public function edit(Field $Field)
     {
         //
     }
@@ -51,7 +51,7 @@ class FieldsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateFieldsRequest $request, Fields $fields)
+    public function update(UpdateFieldRequest $request, Field $Field)
     {
         //
     }
@@ -59,7 +59,7 @@ class FieldsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Fields $fields)
+    public function destroy(Field $Field)
     {
         //
     }

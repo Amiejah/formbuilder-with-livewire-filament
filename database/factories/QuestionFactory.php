@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Fields;
+use App\Models\Field;
 use App\Models\Form;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

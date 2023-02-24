@@ -16,4 +16,14 @@ class Question extends Model
         'is_required',
         'is_active',
     ];
+
+    public function form()
+    {
+        return $this->belongsTo(Form::class);
+    }
+
+    public function field()
+    {
+        return $this->belongsTo(Field::class);
+    }
 }

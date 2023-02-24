@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Fields;
+use App\Models\Field;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
 
-class FieldsPolicy
+class FieldPolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -19,7 +19,7 @@ class FieldsPolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Fields $fields): bool
+    public function view(User $user, Field $Field): bool
     {
         //
     }
@@ -35,7 +35,7 @@ class FieldsPolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Fields $fields): bool
+    public function update(User $user, Field $Field): bool
     {
         //
     }
@@ -43,7 +43,7 @@ class FieldsPolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Fields $fields): bool
+    public function delete(User $user, Field $Field): bool
     {
         //
     }
@@ -51,7 +51,7 @@ class FieldsPolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, Fields $fields): bool
+    public function restore(User $user, Field $Field): bool
     {
         //
     }
@@ -59,7 +59,7 @@ class FieldsPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, Fields $fields): bool
+    public function forceDelete(User $user, Field $Field): bool
     {
         //
     }
