@@ -15,9 +15,10 @@
         @livewireStyles
     </head>
     <body class="antialiased">
-        <livewire:form/>
-        @livewireScripts
-
+        <div class="relative sm:flex min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white pt-20">
+            <livewire:form-builder/>
+            @livewireScripts
+        </div>
 
     </body>
 </html>
